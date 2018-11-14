@@ -47,7 +47,7 @@ int c = a % b;
 A fine esecuzione c varrà 1.
 
 ## Funzioni max / min
-Le funzioni ```max``` e ```cpp min``` restituiscono rispettivamente il massimo e il minimo di due numeri:
+Le funzioni ```max``` e ```min``` restituiscono rispettivamente il massimo e il minimo di due numeri:
 ```cpp
 int a = 5;
 int b = 2;
