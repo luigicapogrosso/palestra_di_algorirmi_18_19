@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
     FILE *fd_in, *fd_out;
 
     // Apertura del file di input
-    fd_in = fopen("./input.txt", "r");
+    fd_in = fopen("input.txt", "r");
     if (fd_in == NULL) {
         fprintf(stderr, "Impossibile aprire il file di input!\n");
         exit(1);
@@ -29,7 +29,7 @@ int main(int argc, char *argv[]) {
     fscanf(fd_in, "%d", &num);
 
     // Scrittura sul file di output
-    fd_out = fopen("./output.txt", "w");
+    fd_out = fopen("output.txt", "w");
     if (fd_out == NULL) {
         fprintf(stderr, "Impossibile creare il file di output!\n");
         exit(1);
