@@ -8,7 +8,7 @@
 int main(int argc, char *argv[]) {
 
     FILE *fd_in, *fd_out;
-    int i, N, max = 0;
+    int i, N, max;
 
     // Apertura del file di input
     fd_in = fopen("./input.txt", "r");
@@ -19,8 +19,11 @@ int main(int argc, char *argv[]) {
 
     // Prendo la dimensione
     fscanf(fd_in, "%d", &N);
+    
+    // Acquisisco max
+    fscanf(fd_in, "%d", &max);
 
-    for (i = 0; i < N; i++) {
+    for (i = 0; i < N - 1; i++) {
         // Variabile temporanea
         int temp;
         fscanf(fd_in, "%d", &temp);
