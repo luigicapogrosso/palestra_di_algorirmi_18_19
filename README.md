@@ -22,9 +22,22 @@ Questo repository sarà il contenitore di tutte le attività che verranno propos
 
 [Sito Prof. Montresor](http://cricca.disi.unitn.it/montresor/ "Sito Montresor")
 
-## Team
+## Team Marie Curie
 Alessandro Ursomando - Docente
 
 [Luigi Capogrosso](https://github.com/luigicapogrosso) - Tutor
 
 [Jasin Atipi](https://github.com/atipiJ) - Tutor
+
+## Ringraziamenti
+Un grande ringraziamento al team originale che ha messo a disposizione il materiale necessario alla presentazione del corso:
+
+[Francesco Lotito](https://github.com/FraLotito)
+
+[Giulia Carocari](https://github.com/geeooleea)
+
+[Marta Fornasier](https://github.com/MartaFornasier)
+
+Damiano Sartori
+
+Sergio Catalano
