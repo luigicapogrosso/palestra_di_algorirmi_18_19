@@ -5,6 +5,7 @@
 * [Operatore % (modulo)](#operatore-%-(modulo))
 * [Funzioni max / min](#funzioni-max/min)
 * [Funzione abs](#funzione-abs)
+* [Funzione qsort](#funzione-qsort)
 
 ## I/O su file
 Questo è il template che userete più spesso:
@@ -77,10 +78,29 @@ A fine esecuzione c varrà 5 e d varrà 2.
 
 ## Funzione abs
 Le funzione ```abs``` restituisce il valore assoluto di un numero:
-```cpp
+```c
 int a = -5;
 int b = 5;
 int c = abs(a); 
 int d = abs(b); 
 ```
 A fine esecuzione c varrà 5 e d varrà 5.
+
+## Funzione qsort
+La funzione ```qsort``` è stata sviluppata per ordinare un array con l'algoritmo Quick-Sort. Quest'ultimo è un algoritmo di ordinamento per confronti che nel caso medio ha una complessità di O(n*log(n)). 
+
+La funzione, per come è stata implementata:
+* Non sa a priori su quale tipo di dato dovrà operare;
+* Non sa a priori su quanti elementi dovrà operare;
+* Non sa a priori la dimensione di un singolo elemento.
+
+Tutti questi dati infatti vengono forniti alla funzione ```qsort```. La firma della funzione è quindi:
+```c
+void qsort (void* base, size_t num, size_t size,  
+            int (*comparator)(const void*,const void*));
+ ```
+
+L'unica cosa che "sa" è questa: in base all'algoritmo Quick-Sort dovrà chiamare ogni volta la funzione di comparazione e in base al risultato di questa comparazione, dovrà scambiare (oppure no) i 2 elementi. La funzione di comparazione ritorna:
+* n < 0 se l'elemento p1 precede l'elemento p2
+* n = 0 se l'elemento p1 è equivalente all'elemento p2
+* n > 0 se l'elemento p1 segue l'elemento p2
