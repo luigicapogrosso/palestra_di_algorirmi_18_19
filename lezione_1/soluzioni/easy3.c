@@ -38,7 +38,6 @@ int main(int argc, char *argv[]) {
         fscanf(fd_in, "%d", &temp);
 
         if (temp % 2 == 0) {
-            printf("P: %d\n", temp);
             // Caso e2 <= e1 <= temp
             if (temp >= e1) {
                 e2 = e1;
@@ -47,7 +46,6 @@ int main(int argc, char *argv[]) {
                 e2 = temp;
             }
         } else {
-            printf("D: %d\n", temp);
             // Caso e2 <= e1 <= temp
             if (temp >= o1) {
                 o2 = o1;
