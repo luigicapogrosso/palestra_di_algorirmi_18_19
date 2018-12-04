@@ -1,4 +1,4 @@
-# Day 2
+# Lezione 2
 
 ### Problemi della settimana
 * [domino](https://training.olinfo.it/#/task/domino/statement) - OII territoriali 2011
