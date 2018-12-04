@@ -30,7 +30,7 @@ Nota: tutti i problemi devono essere risolti facendo utilizzo della programmazio
     rispettare la seguente regola:
     * nessun disco può avere sopra di se dischi più grandi.
 
-    Nota: utile per la comprensione del seguente problema potrebbe essere la seguente [animazione]   (https://www.cs.cmu.edu/~cburch/survey/recurse/hanoiex.html)
+    Nota: utile per la comprensione del seguente problema potrebbe essere la seguente [animazione](https://www.cs.cmu.edu/~cburch/survey/recurse/hanoiex.html)
 
 ### Problemi della settimana
 * [luiss_laurea](https://training.olinfo.it/#/task/luiss_laurea/statement) - Gara di allenamento LUISS 2018
