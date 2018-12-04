@@ -4,21 +4,24 @@ Nota: tutti i problemi devono essere risolti facendo utilizzo della programmazio
 
 ### Riscaldamento
 
-* Calcolo del fattoriale di un numero
+* __Calcolo del fattoriale di un numero__.
+
     Sia dato da tastiera un numero intero N. Scrivere un programma che calcoli il fattoriale di N.
 
     Il fattoriale di un numero è così definito:
     * 1 se N = 0
     * N * (N - 1) se N != 0
 
-* Serie di Fibonacci
+* __Serie di Fibonacci__
+
     Sia dato da tastiera un numero intero N. Calcolare e stampare a video i valori della serie di Fibonacci
     fino all'n-esimo elemento.
 
     La serie di Fibonacci è caratterizzata così: i primi due elementi della serie valgono 1.
     Ogni successivo elemento della serie si ottiene sommando i due precedenti.
 
-* Torri di Hanoi
+* __Torri di Hanoi__
+
     Il rompicapo è costituito da tre pile di dischi ("torri") allineate:
     * all'inizio tutti i dischi si trovano sulla pila di sinistra;
     * alla fine tutti i dischi si devono trovare sulla pila di destra o centrale.
@@ -27,7 +30,7 @@ Nota: tutti i problemi devono essere risolti facendo utilizzo della programmazio
     rispettare la seguente regola:
     * nessun disco può avere sopra di se dischi più grandi.
 
-Nota: utile per la comprensione del seguente problema potrebbe essere la seguente [animazione](https://www.cs.cmu.edu/~cburch/survey/recurse/hanoiex.html)
+    Nota: utile per la comprensione del seguente problema potrebbe essere la seguente [animazione]   (https://www.cs.cmu.edu/~cburch/survey/recurse/hanoiex.html)
 
 ### Problemi della settimana
 * [luiss_laurea](https://training.olinfo.it/#/task/luiss_laurea/statement) - Gara di allenamento LUISS 2018
