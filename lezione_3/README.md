@@ -24,8 +24,11 @@ Nota: tutti i problemi devono essere risolti facendo utilizzo della programmazio
     Ogni successivo elemento della serie si ottiene sommando i due precedenti.
     
     Tale successione ha quindi una definizione ricorsiva secondo la seguente regola:
+    
     F(1) = 1
+    
     F(2) = 1
+    
     F(n) = F(n-1) + F(n-2)
 
 * __Torri di Hanoi__
