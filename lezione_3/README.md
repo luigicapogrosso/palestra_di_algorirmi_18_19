@@ -7,9 +7,9 @@ Nota: tutti i problemi devono essere risolti facendo utilizzo della programmazio
 * __Calcolo del fattoriale di un numero__.
 
     Sia dato da tastiera un numero intero N. Scrivere un programma che calcoli il fattoriale di N.
-    Il fattoriale di N viene indicato tramite l'aggiunta del punto esclamativo: N!
-    Es 2! = 2 * 1 = 2
-    3! = 3 * 2 * 1 = 6
+    Il fattoriale di N viene indicato tramite l'aggiunta del punto esclamativo: N!  
+    Es 2! = 2 * 1 = 2  
+    3! = 3 * 2 * 1 = 6  
 
     Il fattoriale di un numero è così definito:
     * 1 se N = 0
