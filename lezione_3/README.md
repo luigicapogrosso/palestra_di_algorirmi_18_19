@@ -8,8 +8,8 @@ Nota: tutti i problemi devono essere risolti facendo utilizzo della programmazio
 
     Sia dato da tastiera un numero intero N. Scrivere un programma che calcoli il fattoriale di N.
     Il fattoriale di N viene indicato tramite l'aggiunta del punto esclamativo: N!  
-    Es 2! = 2 * 1 = 2  
-    3! = 3 * 2 * 1 = 6  
+    Es = 2! = 2 * 1 = 2  
+         3! = 3 * 2 * 1 = 6  
 
     Il fattoriale di un numero è così definito:
     * 1 se N = 0
@@ -22,6 +22,11 @@ Nota: tutti i problemi devono essere risolti facendo utilizzo della programmazio
 
     La serie di Fibonacci è caratterizzata così: i primi due elementi della serie valgono 1.
     Ogni successivo elemento della serie si ottiene sommando i due precedenti.
+    
+    Tale successione ha quindi una definizione ricorsiva secondo la seguente regola:
+    F(1) = 1
+    F(2) = 1
+    F(n) = F(n-1) + F(n-2)
 
 * __Torri di Hanoi__
 
