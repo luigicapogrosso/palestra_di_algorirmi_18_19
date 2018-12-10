@@ -1,5 +1,12 @@
 # Soluzioni lezione 2
 
+## Fattoriale
+
+Il programma che calcola il fattoriale di un numero, come si nota chiaramente, non fa altro che esprimere utilizzando le caratteristiche del linguaggio di programmazione, la definizione di fattoriale. La funzione chiama sé stessa passando come parametro il valore, decrementato di una unità, del parametro ricevuto e in questo modo ci si approssima, come richiesto dalle proprietà espresse precedentemente, al valore 0 (valore base). Tale ultimo valore, in dipendenza della verità della condizione espressa in blocca il processo ricorsivo.
+
+Nota: il fattoriale di un numero cresce molto velocemente. Per calcolare il
+fattoriale di numeri grandi, modificare la funzione sostituendo ```int``` con ```long```
+
 ## Torri Hanoi
 Per risolvere questo problema si usa la ricorsione. La funzione hanoi prende come parametro l'n-esimo disco da muovere, ovvero il piu' grande. In piu' prende altri 3 parametri, che sono:  
 - Piolo di partenza: Il piolo attuale in cui un determinato numero di dischi risiede  
