@@ -49,3 +49,29 @@ void hanoi(int n, char piolo_partenza, char piolo_arrivo, char piolo_ausiliario)
 } 
 ```
 Ad occhio non e' molto facile capire come fa la chiamata ricorsiva ad "arrangiarsi" spostando i dischi da una parte all'altra, ma seguendo le chiamate passo dopo passo prendendo un n qualsiasi come esempio (iniziando con un n piccolo) si riesce a capire meglio.
+
+## Festa di laurea (laurea)
+### Breve spiegazione del testo
+Il problema richiede di minimizzare il costo del trasporto di N persone da un punto A ad un punto B potendo utilizzare 4 tipologie di veicoli, che possono trasportare 2, 4, 5 o 7 persone. Il veicolo V<sub>i</sub> avrà costo P<sub>i</sub> e disponibilità D<sub>i</sub>, dati in input.
+
+### Idee generali per risolvere l'esercizio
+Una semplice idea, che prende 100 / 100, è provare tutti i modi validi per raggiungere B partendo da A e salvare quello che risulta avere il costo minore.
+```cpp
+
+M = ∞
+
+void solve(int N, int qa, int qb, int qc, int qd, int prezzo) {
+    if (N <= 0) M = min(prezzo, M);
+    else {
+        if(qa > 0) solve(N - 2, qa-1, qb, qc, qd, prezzo + pa);
+        if(qb > 0) solve(N - 4, qa, qb-1, qc, qd, prezzo + pb);
+        if(qc > 0) solve(N - 5, qa, qb, qc-1, qd, prezzo + pc);
+        if(qd > 0) solve(N - 7, qa, qb, qc, qd-1, prezzo + pd);
+    }
+}
+```
+
+Il codice è abbastanza semplice, se abbiamo la possibilità di usare ancora il veicolo V<sub>i</sub> allora lo usiamo, e chiamiamo la funzione che risolverà il sotto-problema con (N - P<sub>i</sub>) persone, (D<sub>i</sub> - 1) disponibilità e (prezzo + P<sub>i</sub>) costo speso finora. E così via per tutti i veicoli V<sub>i</sub>. Quando vorrò risolvere un problema con N <= 0 persone, allora potrò considerare il costo speso finora come il costo totale, confrontarlo con una variabile che conterrà il miglior risultato ottenuto e prendere il minimo.
+
+### Idee alternative
+Ci sono modi migliori per risolverlo, stay tuned.
