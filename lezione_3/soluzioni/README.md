@@ -98,10 +98,3 @@ Abbiamo 2 diverse tipologia di piastrelle da piazzare, rispettivamente di lunghe
 
 ### Idee generali per risolvere l'esercizio
 Semplicemente proviamo tutti i possibili modi di piazzare le piastrelle (backtrack) e stampiamo i modi validi (lunghezza == N).
-
-## Interrogazioni
-### Breve spiegazione del testo
-Abbiamo N quesiti diversi ognuno con difficoltà D<sub>i</sub>, dobbiamo selezionare un sottoinsieme S di K quesiti tale che la differenza d tra max(S) e min(S) sia la minore possibile, dobbiamo poi stampare in output d.
-
-### Idee generali per risolvere l'esercizio
-Ordiniamo gli N quesiti per difficoltà crescente, facciamo scorrere una finestra di lunghezza K sul vettore delle difficoltà D. In questo modo abbiamo che l'elemento con indice i avrà difficoltà minima e l'elemento con indice i+K-1 avrà difficoltà massima nel sottoinsieme S di K elementi considerato. A questo punto la risposta è ```min(D[i+K-1] - D[i])``` per i compreso tra 0 ed N-K.
