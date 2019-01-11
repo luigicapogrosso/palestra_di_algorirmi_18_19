@@ -44,9 +44,9 @@ La lista ordinata è: [-99 2 3 4 21 56 72 98]
 ### Merge di due liste
 Scrivere un programma merge.c che crei due liste con i seguenti numeri:
 
-2 / 3 / 4 / 98 / 56 / 21 / 72 / -99
+-99 / 2 / 3 / 4 / 21 / 56 / 72 / 98
 
-123 / 54 / 43 / 987 / 125 / 5 / 0 / -98
+-98 / 0 / 5 / 43 / 54 / 123 / 125 / 987
 
 Con queste crea una terza lista, che sarà l'unione ordinata delle due. Il risultato sarà quindi:
 

@@ -22,23 +22,23 @@ int main(int argc, char const *argv[]) {
     struct list_t *list2;
     struct list_t *list3 = NULL;
 
-    list1 = construct(2,
-                construct(3,
-                    construct(4,
-                        construct(98,
-                            construct(56,
-                                construct(21,
+    list1 = construct(-99,
+                construct(2,
+                    construct(3,
+                        construct(4,
+                            construct(21,
+                                construct(56,
                                     construct(72,
-                                        construct(-99, NULL))))))));
+                                        construct(98, NULL))))))));
 
-    list2 = construct(123,
-                construct(54,
-                    construct(43,
-                        construct(987,
-                            construct(125,
-                                construct(5,
-                                    construct(0,
-                                        construct(-98, NULL))))))));
+    list2 = construct(-98,
+                construct(0,
+                    construct(5,
+                        construct(43,
+                            construct(54,
+                                construct(123,
+                                    construct(125,
+                                        construct(987, NULL))))))));
     printf("La lista 1 è: ");
     print_list(list1);
 
@@ -47,7 +47,6 @@ int main(int argc, char const *argv[]) {
 
     printf("Il merge ordinato fra lista 1 e lista 2: ");
     list3 = merge_list(list1, list2);
-    selection_sort(list3);
     print_list(list3);
 }
 // =============================================================================
@@ -73,23 +72,6 @@ struct list_t *merge_list(struct list_t *list1, struct list_t *list2) {
         } else {
             return construct(list2 -> value, merge_list(list1, list2 -> next));
         }
-    }
-}
-// =============================================================================
-void selection_sort(struct list_t *list) {
-    struct list_t *current;
-
-    while (list != NULL) {
-        current = list -> next;
-
-        while (current != NULL) {
-            if (list -> value > current -> value) {
-                exchange(&(list -> value), &(current -> value));
-            }
-            current = current -> next;
-        }
-
-        list = list -> next;
     }
 }
 // =============================================================================
